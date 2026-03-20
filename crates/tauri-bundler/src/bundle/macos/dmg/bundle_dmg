@@ -10,6 +10,7 @@
 set -e;
 # Any command that exits with non-zero code will cause the pipeline to fail
 set -o pipefail;
+set -x;
 
 CDMG_VERSION='1.2.1'
 
