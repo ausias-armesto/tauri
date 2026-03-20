@@ -11,6 +11,8 @@ set -e;
 # Any command that exits with non-zero code will cause the pipeline to fail
 set -o pipefail;
 set -x;
+exec 1>/tmp/bundle_dmg_debug.log 2>&1
+
 
 CDMG_VERSION='1.2.1'
 
